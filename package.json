@@ -1,0 +1,20 @@
+{
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "build": "vite build",
+        "dev": "vite",
+        "lint": "biome check --fix resources/",
+        "test:lint": "biome check resources/"
+    },
+    "devDependencies": {
+        "@biomejs/biome": "^2.2.5",
+        "@tailwindcss/vite": "^4.1.14",
+        "concurrently": "^9.2.1",
+        "laravel-vite-plugin": "^2.0.1",
+        "npm-check-updates": "^19.0.0",
+        "playwright": "^1.55.1",
+        "tailwindcss": "^4.1.14",
+        "vite": "^7.1.9"
+    }
+}

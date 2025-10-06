@@ -2,7 +2,7 @@
     "private": true,
     "type": "module",
     "scripts": {
-        "build": "vite build",
+        "build": "vite build && vite build --ssr",
         "dev": "vite",
         "lint": "biome check --fix resources/",
         "test:lint": "biome check resources/"
@@ -10,11 +10,20 @@
     "devDependencies": {
         "@biomejs/biome": "^2.2.5",
         "@tailwindcss/vite": "^4.1.14",
+        "@types/react-dom": "^19.2.0",
+        "@vitejs/plugin-react": "^5.0.4",
         "concurrently": "^9.2.1",
         "laravel-vite-plugin": "^2.0.1",
         "npm-check-updates": "^19.0.0",
-        "playwright": "^1.55.1",
+        "playwright": "^1.56.0",
         "tailwindcss": "^4.1.14",
+        "typescript": "^5.9.3",
         "vite": "^7.1.9"
+    },
+    "dependencies": {
+        "@inertiajs/react": "^2.2.6",
+        "lucide-react": "^0.544.0",
+        "react": "^19.2.0",
+        "react-dom": "^19.2.0"
     }
 }

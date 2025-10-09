@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 return [
 
     /*
@@ -27,7 +29,7 @@ return [
 
         'ensure_bundle_exists' => (bool) env('INERTIA_SSR_ENSURE_BUNDLE_EXISTS', true),
 
-        //'bundle' => base_path('resources/js/ssr.jsx'),
+        // 'bundle' => base_path('resources/js/ssr.jsx'),
 
     ],
 

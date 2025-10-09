@@ -24,6 +24,7 @@ pest()->extend(Tests\TestCase::class)
         Sleep::fake();
 
         $this->freezeTime();
+        config()->set('inertia.ssr.enabled', false);
     })
     ->in('Browser', 'Feature', 'Unit');
 

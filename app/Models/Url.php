@@ -30,7 +30,7 @@ final class Url extends Model
     ];
 
     /**
-     * @return HasMany<Click>
+     * @return HasMany<Click, $this>
      */
     public function clicks(): HasMany
     {

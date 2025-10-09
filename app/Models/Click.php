@@ -25,22 +25,22 @@ final class Click extends Model
     /** @use HasFactory<ClickFactory> */
     use HasFactory;
 
-    protected $fillable = [
+    public $fillable = [
         'url_id', 'referer', 'country', 'device', 'clicked_at',
     ];
 
-    protected function casts(): array
-    {
-        return [
-            'clicked_at' => 'datetime',
-        ];
-    }
-
     /**
-     * @return BelongsTo<Url, Click>
+     * @return BelongsTo<Url, $this>
      */
     public function url(): BelongsTo
     {
         return $this->belongsTo(Url::class);
+    }
+
+    public function casts(): array
+    {
+        return [
+            'clicked_at' => 'datetime',
+        ];
     }
 }
